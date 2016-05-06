@@ -10,44 +10,91 @@ body {
 	padding: 3%;
 	float: center;
 	border: none;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 	
 }
 
 #logo {
 	position: relative;
-	width: auto;
-	padding: 2% 2% 2% 2%;
-	border: none;
-	max-width: 100%;
+	width: 100%;
+	padding: 1% 0% 1% 0%;
+	border: none;	
 	
+}
+
+#menu {
+    display:table;
+    
 }
 
 ul {
     font-family: 'Raleway', sans-serif;
-    display: inline;
+    display: inline-block;
 	text-decoration: none;
-	width: auto;
+	width: 100%;
+    margin: 2% 0% 0% 0%;
+    padding: 0;
+    text-align: center;
+    list-style: none;
 }
 
 li {
     float: left;
-    display: inline block;
+    display: inline-block;
 	text-decoration: none;
-	padding: 2%;
-	
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
 }
 
 li a {
-    display: inline block;
+    display: inline-block;
     color: white;
     text-align: center;
     text-decoration: none;
-    align: center;
+    
 }
 
 
 
+a:hover {
+    color: #99D4C0;
+}
+
+a:visited {
+    color: #D6EEE6; 
+}
+
 h1 {
 	background-color: white;
-	color: white;
+}
+
+h2 {padding: 2%;
+    margin: 5% auto 5% auto;
+    font-size: 200%;
+}
+
+h3 {
+    padding: 2%;
+    font-size: 125%;
+    color: #99D4C0;
+    margin-bottom: 5%;
+}
+
+.text {
+    padding: 3%;
+    color: white;
+    line-height: 115%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+.footer, .push {
+    height: 4em;
 }
