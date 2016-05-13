@@ -28,7 +28,7 @@ body {
 	padding: 3%;
 }
 
-#personalimages {
+#personalPICS {
 	position: right;
 	width: 24px;
 	padding: 2%;
@@ -42,6 +42,17 @@ body {
 #menu {
     display:table;
     
+}
+
+#picturesright {
+    float: left;
+    width: 49%;
+    padding: 0 0 0 1%;
+}
+
+#picturesleft {
+    float: right;
+    width: 49%;
 }
 
 ul {
@@ -62,6 +73,7 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
+	/*padding: 0% 1% 0% 1%;*/
 }
 
 ul li a {
