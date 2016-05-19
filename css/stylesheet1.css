@@ -1,14 +1,14 @@
+/* main style */
 body {
 	background-color: grey;
 	text-align: center;
 	font-family: 'Quicksand', sans-serif;
 }
-
+/*id selectors*/
 #me {
 	position: center;
 	width: 200px;
 	padding: 3%;
-	float: center;
 	border: none;
     display: block;
     margin-left:auto;
@@ -21,7 +21,7 @@ body {
 	padding: 1% 0% 1% 0%;
 	border: none;		
 }
-
+/* picture id selectors */
 #contactpic {
 	position: center;
 	width: 200px;
@@ -33,7 +33,7 @@ body {
 	width: 49%;
 	padding: 2%;
 }
-*/ /*style for group of pics*/
+style for group of pics*/
 
 #aboutpic {
 	width: 75%;
@@ -43,10 +43,6 @@ body {
 .personalpic {
     width: 75%;
     padding: 2%;
-}
-
-#menu {
-    display:table;   
 }
 
 #picturesright {
@@ -63,6 +59,10 @@ body {
     margin-bottom: 4%;
 }
 
+#menu {
+    display:table;   
+}
+/* list styles */
 ul {
     font-family: 'Raleway', sans-serif;
     display: inline-block;
@@ -100,7 +100,7 @@ li a {
     text-decoration: none;
     
 }
-
+/* link styles */
 a {
 	text-decoration: none;
     color: #D6EEE6;
@@ -113,7 +113,7 @@ a:hover {
 a:visited {
     color: #D6EEE6; 
 }
-
+/* header styles */
 h1 {
 	background-color: white;
 }
@@ -137,6 +137,7 @@ h4 {
 	margin-top: 3%;
 	line-height: 150%;
 }
+/* class selectors */
 .links {
 	border: 1px solid #D6EEE6;
 	border-radius: .5em;
