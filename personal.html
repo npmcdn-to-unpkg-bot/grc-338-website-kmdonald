@@ -12,6 +12,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
 		<!--FontAwesome link-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <!--masonry-->
+        <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+        <!--masonry images loaded-->
+        <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
     </head>
     
     <body> <!--everything goes in here-->
@@ -43,16 +49,38 @@
                     What I like to do
                 </h3>
                 	<p> <!--fun picture of me-->
-				<img class="personalpic" src="images/wow.jpg" alt="Friends at WOW">
-					</p>
+				<!--hiding for masonry
+                    <img class="personalpic" src="images/wow.jpg" alt="Friends at WOW">
+					</p>-->
                     <p class="text"> <!--description-->
                       In my free time I love to adventure and spend time with my friends. I love going on hikes, enjoying the outdoors, and taking in the beauty of nature.<br><br>I'm from Orange County, California and one of my favorite parts of going back home is getting to hang out with my dog.<br><br>I also love sports and am a huge Broncos and Angels fan. My go-to music is Country and I enjoy breaking out my cowboys boots and going line-dancing with my friends. 
                     </p>
             </section> <!--end of opening info-->
         <br>
-        			<p> <!--another fun pic of me-->
-				<img class="personalpic" src="images/group2.jpg" alt="Roommates">
-					</p>
+                <p> <!--another fun pic of me-->
+				<!--hiding for masonry
+                <img class="personalpic" src="images/group2.jpg" alt="Roommates">
+					</p>-->
+        <div class="grid">
+            <div class="grid-item">
+                <img class="personalpics" src="images/avila.jpg" alt="Hiking at Avila">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img class="personalpics" src="images/biking.jpg" alt="Biking">
+            </div>
+            <div class="grid-item">
+                <img class="personalpics" src="images/group2.jpg" alt="Roommates">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img class="personalpics" src="images/camping.jpg" alt="Camping Group Pic">
+            </div>
+            <div class="grid-item">
+                <img class="personalpics" src="images/kobelittle.jpg" alt="My Dog">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img class="personalpics" src="images/wow.jpg" alt="Friends at WOW">
+            </div>
+        </div>
     <!--attempt at formatted images
 	<div id="imagesdiv">
 		<section id="picturesright">
@@ -86,5 +114,22 @@
         <div class="footer"> <!--footerdiv-->
             <a href="index.html">Back Home</a>
         </div> <!--end of footer div-->
+        <script>
+           // init Masonry
+var $grid = $('.grid').masonry({
+  // options...
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+        </script>
+       <!--simple script <script>
+            $('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+        </script>-->
     </body> <!--end of where everything goes-->
 </html>
