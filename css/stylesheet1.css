@@ -191,19 +191,49 @@ h4 {
 	color: black;
     position: center;
 }
+
+/*masonry*/
+.grid-item {
+  width: 100%;
+  padding: .5%;
+}
+
+.grid-item img {
+  width: 75%;
+  height: auto;
+}
+
 /* For tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) 
+{
     /*add more responsive stuff here */
  #me, #aboutpic, .personalpic, #contactpic {
         width: 30%;
         float: left;
     }
 	
-
+	.grid {
+		margin-left: 12%;
+	}
+	
+    .grid-item {
+    	width: 45%;
+  }
+	
+	.grid-item grid-item--width2 {
+		width: 45%;
+	}
+	
+	li {
+		font-size: 
+	}
+	
 }
 
 /* For desktop */
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1024px) 
+{
+	
     #me, #aboutpic, .personalpic, #contactpic {
         width: 40%;
         float: left;
@@ -244,15 +274,21 @@ h4 {
     #footer2 {
         margin-top: 25%;
     }
-    .grid-item { 
-		width: 20%;
-		padding: 3%;
+	
+	.grid {
+		margin-left: 12%;
 	}
-    .grid-item--width2 { 
-		width: 40%;
-		padding: 3%;
+	
+    .grid-item {
+    	width: 30%;
+  }
+	
+	.grid-item grid-item--width2 {
+		width: 30%;
 	}
+	
 	.push {
 		margin-top: 17em;
 		position: center;
+	}
 }
